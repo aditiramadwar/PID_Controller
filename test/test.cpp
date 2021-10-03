@@ -26,7 +26,7 @@
 #include "pid_lib.hpp"
 
 // Creating object pid of class ControllerPID
-ControllerPID pid;
+
 
 /**
  * @brief: Tests the compute method of the class by returning a double value,
@@ -36,11 +36,17 @@ ControllerPID pid;
  * expected return value = 7.2
  *
  * */
-TEST(ComputeTest1, should_pass) {ASSERT_EQ(7.2, pid.computeVelocity(8.0, 4.0));}
+TEST(ComputeTest1, should_pass) {
+  ControllerPID pid(1.2, 0.4, 0.2);
+  ASSERT_EQ(6.4, pid.computeVelocity(8.0, 4.0));
+}
 
 /**
  * @brief: Tests the correct initialization of sampling_time
  * should pass
  * expected return value = 1.0
  */
-TEST(ComputeTest2, should_pass) {ASSERT_EQ(1.0, pid.returnSamplingTime());}
+TEST(ComputeTest2, should_pass) {
+  ControllerPID pid(1.2, 0.2, 0.4);
+  ASSERT_EQ(1.0, pid.returnSamplingTime());
+}
