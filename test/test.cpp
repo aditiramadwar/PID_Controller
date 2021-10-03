@@ -36,7 +36,7 @@
  * expected return value = 7.2
  *
  * */
-TEST(ComputeTest1, should_pass) {
+TEST(ControllerPID, get_pid_output) {
   ControllerPID pid(1.2, 0.4, 0.2);
   ASSERT_EQ(6.4, pid.computeVelocity(8.0, 4.0));
 }
@@ -46,7 +46,7 @@ TEST(ComputeTest1, should_pass) {
  * should pass
  * expected return value = 1.0
  */
-TEST(ComputeTest2, should_pass) {
+TEST(ControllerPID, get_sampling_time) {
   ControllerPID pid(1.2, 0.2, 0.4);
   ASSERT_EQ(1.0, pid.returnSamplingTime());
 }
