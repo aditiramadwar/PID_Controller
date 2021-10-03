@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/aditiramadwar/PID_Controller/badge.svg?branch=master)](https://coveralls.io/github/aditiramadwar/PID_Controller?branch=master)
 
 [![Build Status](https://app.travis-ci.com/ameyakonk/enpm808x_tdd_test.svg?branch=master)](https://app.travis-ci.com/ameyakonk/enpm808x_tdd_test)
-[![Coverage Status](https://coveralls.io/repos/github/ameyakonk/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/ameyakonk/cpp-boilerplate?branch=master) 
+[![Coverage Status](https://coveralls.io/repos/github/ameyakonk/enpm808x_tdd_test/badge.svg?branch=master)](https://coveralls.io/github/ameyakonk/enpm808x_tdd_test?branch=master)
 ---
 
 ## Overview
