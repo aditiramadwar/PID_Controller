@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.com/aditiramadwar/PID_Controller.svg?branch=master)](https://travis-ci.com/github/aditiramadwar/PID_Controller)
 [![Coverage Status](https://coveralls.io/repos/github/aditiramadwar/PID_Controller/badge.svg?branch=master)](https://coveralls.io/github/aditiramadwar/PID_Controller?branch=master)
+
+[![Build Status](https://app.travis-ci.com/ameyakonk/cpp-boilerplate.svg?branch=master)](https://app.travis-ci.com/ameyakonk/cpp-boilerplate)
+[![Coverage Status](https://coveralls.io/repos/github/ameyakonk/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/ameyakonk/cpp-boilerplate?branch=master)
 ---
 
 ## Overview
