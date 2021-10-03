@@ -38,7 +38,7 @@
  * */
 TEST(ControllerPID, get_pid_output) {
   ControllerPID pid(1.2, 0.4, 0.2);
-  ASSERT_EQ(6.4, pid.computeVelocity(8.0, 4.0));
+  ASSERT_EQ(7.2, pid.computeVelocity(8.0, 4.0));
 }
 
 /**
