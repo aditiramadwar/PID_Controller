@@ -29,11 +29,29 @@ class ControllerPID {
  public:
        double computeVelocity(double set_point, double current_velocity);
        double returnSamplingTime(void);
+       ControllerPID(double k_p_, double k_i_, double k_d_) {
+        // Initialize K_p, K_i, k_d
+        k_p = k_p_;
+        k_i = k_i_;
+        k_d_ = k_d_;
+        sampling_time = 1.0;
+        cur_error = 0;
+        prev_error = 0;
+        new_velocity = 0;
+        total_D_error = 0;
+        total_I_error = 0;
+    }
+ 
  private:
         double k_p = 1.2;
         double k_d = 0.2;
         double k_i = 0.4;
         double sampling_time = 1.0;
+        double prev_error;
+        double cur_error;
+        double new_velocity;
+        double total_D_error;
+        double total_I_error;
 };
 
 /** 
@@ -53,11 +71,9 @@ class ControllerPID {
 */
 double ControllerPID::computeVelocity(double set_point,
     double current_velocity) {
-    double prev_error = 0, cur_error = 0, total_I_error = 0, total_D_error = 0;
     cur_error = (set_point - current_velocity);
     total_I_error = total_I_error + cur_error*sampling_time;
     total_D_error = (cur_error - prev_error)/sampling_time;
-    double new_velocity;
     new_velocity = k_p*cur_error +  k_i*total_I_error + k_d*total_D_error;
     return new_velocity;
 }
