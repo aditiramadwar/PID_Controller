@@ -11,7 +11,10 @@ A practice of Test Driven Development through pair programming was carried out u
 Pair B for the Test Driven Development
 
 Authors: 
+
 Part 1 - Driver: Aditi Ramadwar, Navigator: Yash Kulkarni
+
+Part 2 - Driver: Ameya Konkar, Navigator: Diane Ngo
 
 Simple starter C++ project with:
 
